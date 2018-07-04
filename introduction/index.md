@@ -3,13 +3,11 @@
 
 This document introduces the concept of a Common Specification for Information Packages. It aims to serve three main purposes:
 
-1.	Establish a common understanding of the requirements which need to be met in order to achieve interoperability of Information Packages;
+1.	Establish a common understanding about the requirements which need to be met in order to achieve interoperability between repositories and other information systems with respect to the use of Information Packages;
 
-2.	Establish a common base for the development of more specific Information Package definitions and tools within the digital preservation community;
+2.	Establish a common base for the development of Information Package definitions and tools within the digital preservation community;
 
-3.	Propose the details of an XML-based implementation of the requirements using, to the largest possible extent, standards which are widely used in international digital preservation.
-
-Ultimately the goal of the Common Specification for Information Packages (CS IP) is to reach a level of interoperability between all Information Packages so that tools implementing the CS IP can be taken up by institutions without needing further modifications or adaptations.
+3.	Propose an XML-based implementation of the requirements based on standards which are used as part of the digital preservation best practice in archival organizations.
 
 ## 1.1 The Common Specification for Information Packages and OAIS
 In the OAIS  framework three types of Information Packages (IPs) are present in a digital preservation ecosystem: Submission Information Packages (SIPs), Archival Information Packages (AIPs) and Dissemination Information Packages (DIPs) ([Figure 1](#fig1)). These three IP types are respectively used to
