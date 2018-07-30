@@ -3,13 +3,11 @@
 
 This document introduces the concept of a Common Specification for Information Packages. It aims to serve three main purposes:
 
-1.	Establish a common understanding of the requirements which need to be met in order to achieve interoperability of Information Packages;
+1.	Establish a common understanding about the requirements which need to be met in order to achieve interoperability between repositories and other information systems with respect to the use of Information Packages;
 
-2.	Establish a common base for the development of more specific Information Package definitions and tools within the digital preservation community;
+2.	Establish a common base for the development of Information Package definitions and tools within the digital preservation community;
 
-3.	Propose the details of an XML-based implementation of the requirements using, to the largest possible extent, standards which are widely used in international digital preservation.
-
-Ultimately the goal of the Common Specification for Information Packages (CS IP) is to reach a level of interoperability between all Information Packages so that tools implementing the CS IP can be taken up by institutions without needing further modifications or adaptations.
+3.	Propose an XML-based implementation of the requirements based on standards which are used as part of the digital preservation best practice in archival organizations.
 
 ## 1.1 The Common Specification for Information Packages and OAIS
 In the OAIS  framework three types of Information Packages (IPs) are present in a digital preservation ecosystem: Submission Information Packages (SIPs), Archival Information Packages (AIPs) and Dissemination Information Packages (DIPs) ([Figure 1](#fig1)). These three IP types are respectively used to
@@ -31,18 +29,17 @@ However, to allow for interoperability on process level there is still a need fo
 
 In general, the E-ARK SIP and E-ARK DIP specifications reuse and apply fully all the requirements set in this Common Specification. However, they also extend it with aspects relevant only for the respective processes ([Figure 2](#fig2)).
 
-For example, the E-ARK SIP specification extends the CS IP with further requirements about recording relevant information on a submission agreement and the actors of the submission process. On the other hand, the E-ARK DIP provides possibilities for describing complex access environments needed to reuse the content of a DIP.
+For example, the E-ARK SIP specification extends the CS IP with further requirements about recording relevant information on a submission agreement and the actors of the submission process. On the other hand, the E-ARK DIP provides possibilities for describing access environments needed to reuse the content of a DIP.
 
 Regarding the E-ARK AIP format, it is important to note that it does not extend the CS IP in the same way the E-ARK SIP and E-ARK DIP formats do, i.e. in the sense of a format specification inheriting all general properties from the CS IP which is then augmented by specific AIP requirements. The reason for this is that while the SIP and the DIP are like "snapshots" in time – one capturing the state of an information package at time of submission (SIP), the other one capturing one form of delivery of the information for access (DIP)
-– then the AIP needs to deal with an “evolving object” which is constantly updated by preservation actions undertaken in the course of the objects life-cycle. As such, while the E-ARK AIP specification does implement all of the core metadata requirements defined in the Common Specification and extends these (for example it describes a means to record preservation actions about the IP), it does also extend the default structure of the CS IP (defined in [Section 4](../implementation#)). Essentially the AIP introduces a more complex structure which allows at the same time to securely hold an E-ARK SIP (which itself follows in full the CS IP) and at the same time add and modify additional representations over a series of preservation actions.
+– the AIP needs to deal with an “evolving object” which might being updated by preservation actions undertaken in the course of the objects life-cycle. As such, while the E-ARK AIP specification does implement all of the core metadata requirements defined in the Common Specification and extends these (for example it describes a means to record preservation actions about the IP), it does also extend the default structure of the CS IP (defined in [Section 4](../implementation#)). Essentially the AIP introduces a structure which permits to securely hold an E-ARK SIP (which itself follows the CS IP) and at the same time allows adding and modifying additional representations over a series of preservation actions.
 
 ## 1.2 The Common Specification for Information Packages and Content Information Type Specifications
-As an interoperability standard, it must be possible to use the CS IP regardless of the type and format of the content users need to handle. At the same time, each individual content type and file format can have specific characteristics which need to be taken into account for purposes of validation, preservation and curation.
+As an interoperability standard, it must be possible to use the CS IP regardless of the type and format of the content users need to handle. At the same time, each individual content type and file format can have specific characteristics which need to be taken into account for the purpose of validation, preservation and curation.
 
-To allow for such in-depth control over specific content types and formats, E-ARK specifications introduce the concept of Content Information Type Specifications.  A Content Information Type Specification can include detailed requirements on how content, metadata, and documentation for specific content types (for example relational databases or geospatial data) have to be handled within a CS IP (or E-ARK SIP, AIP or DIP).
+To allow for such in-depth control over specific content types and formats, E-ARK specifications introduce the concept of a Content Information Type Specification which can include detailed requirements on how content, metadata, and documentation for specific content types (for example relational databases or geospatial data) have to be handled within a CS IP (or E-ARK SIP, AIP or DIP).
 
-For now (February 2017) there are seven Content Information Type Specifications which have been created by the E-ARK project and have been verified for usage within the Common Specification for Information
-Packages:
+For now (February 2017) there are seven Content Information Type Specifications which have been created by the E-ARK project and have been verified for usage within the Common Specification for Information Packages:
 
 - SMURF SFSB: Semantically Marked-Up Records Format for Simple File-System Based records. This Content Information Type Specification describes the usage of the CS IP for the case of simple computer files organised in folder structures; and their description using the EAD encoding standard ;
 
@@ -57,8 +54,7 @@ Packages:
 
 **Figure 3:** Common Specification for Information Packages and Content Information Type Specifications
 
-The total number of Content Information Type specifications is, however, unlimited and the long-term commitment of the DILCIS Board  is to keep the overall environment open and inclusive. As such, interested bodies are welcome to develop their own Content Information Type Specifications, for example
-for 3D building projects or electronic publications. An appropriate management regime to facilitate the creation and approval of additional Content Information Type specifications by anyone in the broader community is implemented by the DILCIS Board.
+The total number of Content Information Type specifications is, however, unlimited and the long-term commitment of the DILCIS Board  is to keep the overall environment open and inclusive. As such, interested bodies are welcome to develop their own Content Information Type Specifications, for example for 3D building projects or electronic publications. An appropriate management regime to facilitate the creation and approval of additional Content Information Type specifications by anyone in the broader community is implemented by the DILCIS Board.
 
 For more detailed information about the Content Information Type specifications please look also at [Section 6.1](../implementation#) below and check www.dilcis.eu!
 
@@ -68,7 +64,7 @@ Following the discussions in the previous two Sections we can state that the ove
 
 - The current document, the Common Specification for Information Packages, is the core which provides guidance which must be followed regardless of the process, data or lifecycle stage;
 
-- The E-ARK SIP, AIP and DIP build on the CS IP and extend it with specific process-related aspects;
+- The E-ARK SIP, AIP and DIP are based on the CS IP and extend it with specific process-related aspects;
 
 - The Content Information Type Specifications define detailed requirements for embedding and describing specific content types within a CS IP.
 
@@ -77,7 +73,7 @@ Following the discussions in the previous two Sections we can state that the ove
 
 **Figure 4:** Relations between the Common Specification for Information Packages; E-ARK SIP, AIP and DIP specifications; and Content Information Type Specifications
 
-Therefore the “thing encountered in the wild” is the E-ARK SIP, AIP or DIP including data according to one or many Content Information Type Specifications.
+Therefore a concrete physical information package would always be an E-ARK SIP, AIP or DIP implemented in compliance with one or several Content Information Type Specifications.
 
 ## 1.4. Relation to other documents
 This Common Specification for Information Packages is related to the following documents:
@@ -105,8 +101,7 @@ These three deliverables document the best-practice survey carried out during th
 - E-ARK AIP Specification
 - E-ARK DIP Specification
 
-The E-ARK SIP, AIP and DIP specifications build on the Common Specification for
-Information Packages and extend it in regard to requirements derived from pre-ingest and ingest, archival storage, and access processes.
+The E-ARK SIP, AIP and DIP specifications build on the Common Specification for Information Packages and extend it in regard to requirements derived from pre-ingest and ingest, archival storage, and access processes.
 
 ## 1.5. Structure of the document
 The rest of this document describes the CS IP and its practical implementation. The document is divided into two logical parts.
@@ -118,17 +113,15 @@ The first part ([Section 2](../specification#) and [Section 3](../specification#
 - [Section 3](../specification/) presents the core requirements which need to be met in order to achieve the interoperability goal described in Section 2. Based on these requirements a set of high-level solutions are introduced regarding, for example, the structure and use of metadata within any
 implementation of an Information Package.
 
-The second part of this document ([Section 4](../implementation/), [Section 5](../implementation/) and [Section 6](../implementation/)) presents a practical implementation of the principles described in previous Sections, as implemented according to current state-of-the-art technologies. As such, this part of the document describes the requirements which are needed to achieve
-practical IP interoperability:
+The second part of this document ([Section 4](../implementation/), [Section 5](../implementation/) and [Section 6](../implementation/)) presents a practical implementation of the principles described in previous Sections, as implemented according to current state-of-the-art technologies. As such, this part of the document describes the requirements which are needed to achieve repository system interoperability with respect to the contained IP:
 
-- [Section 4](../implementation/) presents a detailed description of the structure which must be implemented in any CS IP
-Information Package.
+- [Section 4](../implementation/) presents a detailed description of the structure which must be implemented in any CS IP.
 
-- [Section 5](../implementation/) presents a detailed overview of metadata requirements within CS IP Information Packages with a special focus on the use of metadata elements which are needed for the automation and interoperability of archival validation and identification tasks
+- [Section 5](../implementation/) presents a detailed overview of metadata requirements defined by the CS with a special focus on the use of metadata elements which are needed for the automation and interoperability of archival validation and identification tasks
 
 - [Section 6](../implementation/) describes additional (optional) components extending the practical implementation in regard to specific aspects
   - How to create new Content Information Type specifications
   - How to split large content objects between multiple physical IPs
-  - Generic guidelines on adding (any) descriptive metadata into a CS IP Information Package
+  - Generic guidelines on adding (any) descriptive metadata into a CS IP
 
-Finally, in addition to this document full examples of IPs conforming to the Common Specification for Information  implementation details are available at <https://github.com/DLMArchivalStandardsBoard/>.
+Finally, in addition to this document full examples of IPs conforming to the Common Specification for Information implementation details are available at <https://github.com/DLMArchivalStandardsBoard/>.
